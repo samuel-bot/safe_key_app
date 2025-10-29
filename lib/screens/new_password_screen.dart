@@ -153,7 +153,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: const Color(0xFF2196F3),
+        backgroundColor: const Color.fromARGB(255, 243, 33, 68),
         title: const Text(
           'Gerador de Senhas',
           style: TextStyle(
@@ -199,7 +199,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
               ),
               child: Row(
                 children: [
-                  const Icon(Icons.lock_outline, color: Color(0xFF2196F3)),
+                  const Icon(Icons.lock_outline, color: Color.fromARGB(255, 243, 33, 51)),
                   const SizedBox(width: 12),
                   Expanded(
                     child: Text(
@@ -217,7 +217,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                   ),
                   if (generatedPassword != null)
                     IconButton(
-                      icon: const Icon(Icons.copy, color: Color(0xFF2196F3)),
+                      icon: const Icon(Icons.copy, color: Color.fromARGB(255, 243, 33, 33)),
                       onPressed: () {
                         Clipboard.setData(
                           ClipboardData(text: generatedPassword!),
@@ -243,7 +243,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                   min: 4,
                   max: 32,
                   divisions: 28,
-                  activeColor: const Color(0xFF2196F3),
+                  activeColor: const Color.fromARGB(255, 243, 33, 51),
                   inactiveColor: Colors.grey[300],
                   onChanged: (value) =>
                       setState(() => passwordLength = value.round()),
@@ -282,7 +282,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
               child: ElevatedButton(
                 onPressed: isLoading ? null : _generatePassword,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF2196F3),
+                  backgroundColor: const Color.fromARGB(255, 243, 33, 51),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
@@ -313,7 +313,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
 
       floatingActionButton: generatedPassword != null
           ? FloatingActionButton(
-              backgroundColor: const Color(0xFF2196F3),
+              backgroundColor: const Color.fromARGB(255, 196, 4, 4),
               onPressed: _showSaveDialog, // ABRE DIALOG
               child: const Icon(Icons.save, color: Colors.white),
             )
@@ -327,7 +327,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
       contentPadding: EdgeInsets.zero,
       title: Text(title, style: const TextStyle(fontSize: 15)),
       value: value,
-      activeThumbColor: const Color(0xFF2196F3),
+      activeThumbColor: const Color.fromARGB(255, 243, 33, 68),
       onChanged: onChanged,
     );
   }

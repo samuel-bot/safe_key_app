@@ -135,8 +135,9 @@ class _HomeScreenState extends State<HomeScreen> {
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
+        backgroundColor: Colors.red,
+        foregroundColor: Colors.deepPurple,
+        automaticallyImplyLeading: false,
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
@@ -292,7 +293,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 isVisible
                                     ? Icons.visibility_off
                                     : Icons.visibility,
-                                color: Colors.blue,
+                                color: Colors.red,
                               ),
                               onPressed: () =>
                                   _togglePasswordVisibility(passwordId),
@@ -324,8 +325,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           );
         },
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
+        backgroundColor: Colors.red,
+        foregroundColor: Colors.deepPurple,
         child: const Icon(Icons.add),
       ),
     );

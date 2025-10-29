@@ -90,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue,
+                    color: Color.fromARGB(255, 243, 33, 68),
                   ),
                 ),
                 const SizedBox(height: 8),
@@ -166,7 +166,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     child: ElevatedButton(
                                       onPressed: _login,
                                       style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.blue,
+                                        backgroundColor: const Color.fromARGB(255, 243, 33, 61),
                                         foregroundColor: Colors.white,
                                         shape: RoundedRectangleBorder(
                                           borderRadius: BorderRadius.circular(8),
@@ -186,7 +186,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     child: OutlinedButton(
                                       onPressed: _register,
                                       style: OutlinedButton.styleFrom(
-                                        side: const BorderSide(color: Colors.blue),
+                                        side: const BorderSide(color: Color.fromARGB(255, 243, 33, 44)),
                                         shape: RoundedRectangleBorder(
                                           borderRadius: BorderRadius.circular(8),
                                         ),
@@ -196,7 +196,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       child: const Text(
                                         'Registrar',
                                         style: TextStyle(
-                                          color: Colors.blue,
+                                          color: Color.fromARGB(255, 243, 33, 79),
                                           fontSize: 16,
                                         ),
                                       ),
@@ -253,7 +253,7 @@ class CustomTextField extends StatelessWidget {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(color: Colors.blue),
+          borderSide: const BorderSide(color: Color.fromARGB(255, 243, 33, 61)),
         ),
         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       ),

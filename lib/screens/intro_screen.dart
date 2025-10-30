@@ -82,14 +82,12 @@ class _IntroScreenState extends State<IntroScreen> {
       body: SafeArea(
         child: Stack(
           children: [
-            // Conteúdo centralizado
             Center(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 28.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // Lottie animação
                     SizedBox(
                       width: 220,
                       height: 220,
@@ -146,8 +144,6 @@ class _IntroScreenState extends State<IntroScreen> {
                   ),
                 ),
               ),
-
-            // Botão Voltar
             Positioned(
               left: 16,
               bottom: 16,
@@ -164,8 +160,6 @@ class _IntroScreenState extends State<IntroScreen> {
                     )
                   : const SizedBox(width: 70),
             ),
-
-            // Botão Avançar/Concluir
             Positioned(
               right: 16,
               bottom: 16,
@@ -181,8 +175,6 @@ class _IntroScreenState extends State<IntroScreen> {
                 ),
               ),
             ),
-
-            // Indicadores de página
             Positioned(
               bottom: 50,
               left: 0,

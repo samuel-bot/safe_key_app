@@ -23,7 +23,6 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
   bool includeNumbers = true;
   bool includeSymbols = true;
 
-  // Usuário logado
   User? get _currentUser => FirebaseAuth.instance.currentUser;
 
   Future<void> _generatePassword() async {
@@ -189,9 +188,8 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(color: Colors.grey.shade300),
                 boxShadow: [
-                  // ignore: deprecated_member_use
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.1),
+                    color: Color(0x1A808080),
                     blurRadius: 8,
                     offset: const Offset(0, 2),
                   ),

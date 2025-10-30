@@ -73,12 +73,11 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min, // Importante: evita esticar
+              mainAxisSize: MainAxisSize.min,
               children: [
-                // Lottie animation - tamanho reduzido
                 Lottie.asset(
                   'assets/lottie/auth_lock.json',
-                  height: 200, // Reduzido
+                  height: 200, 
                   width: 200,
                   fit: BoxFit.contain,
                 ),
